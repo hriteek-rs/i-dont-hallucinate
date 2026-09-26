@@ -8,3 +8,10 @@ def read_task():
     print(read)
 read_task()
 
+#the app lets u add more tasks
+def new_task():
+  with open("tasks.txt",'a+') as file:
+    add=input("add more task:")
+    file.write(add+"\n")
+new_task()    
+
