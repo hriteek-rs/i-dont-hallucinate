@@ -8,10 +8,23 @@ def read_task():
     print(read)
 read_task()
 
-#the app lets u add more tasks
+# add more tasks
 def new_task():
   with open("tasks.txt",'a+') as file:
     add=input("add more task:")
     file.write(add+"\n")
+    user=input("Would u like to add more tasks (y/n)?")
+    while user.lower()=="y":
+      task = input("add task:")
+      user = input("would u like to add more tasks(y/n)")
 new_task()    
+
+#complete task
+def complete_task():
+
+  task={
+    "id":1,
+    "title":"python tasks",
+    "completed":True
+}
 
