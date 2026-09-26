@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="blob blob-3" aria-hidden="true"></div>
+
+  <div class="wrapper">
+
+    <!-- Header -->
+    <p class="eyebrow">Today's focus</p>
+    <div class="title-row">
+      <h1>My Tasks</h1>
+      <span class="counter">2/3</span>
+    </div>
+    <p class="subtitle">One more thing to knock out.</p>
+
+    <!-- Card -->
+    <div class="card">
+
+      <!-- Input -->
+      <div class="input-row">
+        <input class="task-input" type="text" placeholder="Add a new task…" />
+        <button class="add-btn" aria-label="Add task">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 2v12M2 8h12" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Task 1 -->
+      <div class="task">
+        <div class="accent-bar accent-orange"></div>
+        <div class="checkbox"></div>
+        <span class="task-label">Learn Python</span>
+        <button class="del-btn" aria-label="Delete">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2 3.5h10M5.5 3.5V2.5a1 1 0 011-1h1a1 1 0 011 1v1M5.5 6v4.5M8.5 6v4.5M3 3.5l.7 7.1a1 1 0 001 .9h4.6a1 1 0 001-.9L11 3.5" stroke="#c87060" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Task 2 -->
+      <div class="task">
+        <div class="accent-bar accent-green"></div>
+        <div class="checkbox"></div>
+        <span class="task-label">Practice loops</span>
+        <button class="del-btn" aria-label="Delete">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2 3.5h10M5.5 3.5V2.5a1 1 0 011-1h1a1 1 0 011 1v1M5.5 6v4.5M8.5 6v4.5M3 3.5l.7 7.1a1 1 0 001 .9h4.6a1 1 0 001-.9L11 3.5" stroke="#c87060" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Task 3 — completed -->
+      <div class="task">
+        <div class="accent-bar accent-faded"></div>
+        <div class="checkbox checkbox-done">
+          <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+            <path d="M1 5L4.5 8.5L11 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="task-label done">Build calculator</span>
+        <button class="del-btn del-btn-faded" aria-label="Delete">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2 3.5h10M5.5 3.5V2.5a1 1 0 011-1h1a1 1 0 011 1v1M5.5 6v4.5M8.5 6v4.5M3 3.5l.7 7.1a1 1 0 001 .9h4.6a1 1 0 001-.9L11 3.5" stroke="rgba(200,120,100,0.4)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Footer -->
+      <div class="card-footer">
+        <button class="clear-btn">CLEAR COMPLETED</button>
+      </div>
+    </div>
+
+    <p class="tagline">Small steps, big progress.</p>
+  </div>
+
+</body>
+</html>
