@@ -1,30 +1,20 @@
-# Problem: 46. To-do list app: read tasks from tasks.txt on startup, let the user add/complete/delete tasks, write changes back so the list persists across runs. (Loops + file handling + functions)
+tasks =[]
 
-#this function below reads tasks from the file named "tasks.txt" when the program is started
+def menu():
+    print("TO-DO LIST")
+    print("1.Add new task")
+    print("2.View Task")
+    print("3.Task Completed")
+    print("4.Delete Task")
+    print("5.Exit")
 
-def read_task():
- with open("tasks.txt",'r') as file:
-    read=file.read()
-    print(read)
-read_task()
+def add_task():
+        new_task=input("Add new task:")
+        tasks.append({"task":new_task, "done":False})
+        print(f"Task: '{new_task}' added!")
 
-# add more tasks
-def new_task():
-  with open("tasks.txt",'a+') as file:
-    add=input("add more task:")
-    file.write(add+"\n")
-    user=input("Would u like to add more tasks (y/n)?")
-    while user.lower()=="y":
-      task = input("add task:")
-      user = input("would u like to add more tasks(y/n)")
-new_task()    
+add_task()
 
-#complete task
-def complete_task():
 
-  task={
-    "id":1,
-    "title":"python tasks",
-    "completed":True
-}
 
+        
